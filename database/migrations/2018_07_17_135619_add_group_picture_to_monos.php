@@ -30,4 +30,5 @@ class AddGroupPictureToMonos extends Migration
             $table->dropColumn('group_picture');
         });
     }
+    
 }
