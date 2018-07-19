@@ -1,13 +1,24 @@
 body {
-    background-image: url("3.jpg");
-    background-size: 20%;
+    background-image: url("2.jpg");
+    background-size: 100%;
 }
 
-#login{
-    position: absolute;
-    
+#register-page {
+    margin-top: 5px;
+    font-size:60px;
+    font-family: 'century';
+    float: left;
 }
 
-p {
-    color:  red;
+.form-group{
+    font-size: 20px;
+    width: 300px;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    border: double 4px black;
+    border-radius: 3px;
+    transition: .4s;
 }

@@ -211,18 +211,40 @@ class UsersController extends Controller
 
     public function wanters($id)
     {
+       //s return;
         $user = User::find($id);
-        $wanters = $user->wanters()->paginate(10);
+        // $wanters = Mono::all();
+        $idsTmp = \DB::select('select monos.id as id, mono_want.user_id as wanter_id from  mono_want join monos on mono_want.want_id = monos.id where monos.user_id = ?', [$id]);
+        $ids =array();
+        $wanter_ids_from_mono_id = array();
+        foreach($idsTmp as $t) {
+            array_push($ids, $t->id);
+            if(false == isset($wanter_ids_from_mono_id[$t->id])) {
+                $wanter_ids_from_mono_id[$t->id] = array();
+            }
+            array_push($wanter_ids_from_mono_id[$t->id], $t->wanter_id);
+        } 
+//        foreach($wanter_ids_from_mono_id as $i){
+ //       User::find($i)->; 
+   //     
+        
+     //   }
 
+        $wanters = Mono::whereIn('id',$ids)->paginate(10);
+        $count_wanters = Mono::whereIn('id',$ids)->count();
+
+//        $wanters = $user->wanters()->paginate(10);
+        // print_r($wanters);exit;
         $data = [
             'user' => $user,
             'monos' => $wanters,
         ];
-
+        
         $data += $this->counts($user);
-
+        $data['count_wanters'] = $count_wanters;
         return view('users.wanters', $data);
     }
+
     
     
     

@@ -12,6 +12,9 @@
             </div>
         </div>
     @endif
+    <footer>
+        <div class="text-center text-muted">© 2018 YAKITOMATO</div>
+    </footer>
 @endsection
 
 <link type="text/css" rel="stylesheet" href="css/welcome.css" />

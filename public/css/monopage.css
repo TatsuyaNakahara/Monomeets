@@ -1,0 +1,71 @@
+body {
+    background-image: url("3.jpg");
+    background-size: 100%;
+    font-family: 'arial unicode ms';
+
+}
+.card{
+    display:inline-block;
+  background-color:#fff;
+  margin-left: 420px;
+  padding-bottom:10px;
+  border-radius:5px;
+    -moz-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+  
+}
+
+.image-box,
+.title-box,
+.card{
+  width:250px;
+}
+
+.image-box{
+  border-radius:5px 5px 0 0;
+  background-color:#f8f8f8;
+  margin-bottom:-6px;
+  height:120px;
+  background:url("https://placehold.jp/250x120.png") center center /cover no-repeat;
+  background-image: url("inu.jpg");
+}
+
+.image-box img{
+    height: 120px;
+    width: 250px;
+}
+
+.title-box{
+  margin-bottom: -40px;
+  padding-left:5px;
+  font-size:18px;
+  padding:20px 10px 10px;
+}
+
+.content-box{
+    margin:0 auto;
+  padding-left:5px;
+  font-size:18px;
+  padding:20px 10px 10px;
+}
+
+.delete{
+    float: right;
+    margin-right: 10px;
+}
+
+.show-class{
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.shu-class{
+    width: 200px;
+    margin-left: 25px;
+}
+
+.chat{
+    margin-left: 110px;
+}

@@ -1,0 +1,50 @@
+.panel{
+    width: 50%;
+    text-align: center;
+}
+
+.col-xs-4{
+    margin-left: 490px;
+}
+
+.nav-tabs li{
+    margin-left: 20px;
+}
+
+.row{
+    font-family: 'arial unicode ms';
+    border-top: 100px;
+}
+
+.col-xs-8{
+    margin-left: 200px;
+}
+
+body {
+    background-image: url("3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+
+
+.mono{
+    margin-top: 30px;
+    margin-left: 120px;
+    
+}
+
+ul button{
+    margin-left: 320px;
+    display: inline-block;
+    height: 50px;
+    font-size: 20px;
+    line-height: 46px;
+    text-decoration: none;
+    border-radius:30px; 
+    
+}
+
+.follow{
+    width: 180px;
+}

@@ -11,3 +11,14 @@ body {
 p {
     color:  red;
 }
+
+.form-group{
+    font-size: 20px;
+    width: 300px;
+}
+
+.text-muted {
+    margin-top: 500px;
+    font-size: 20px;
+    float: right;
+}
