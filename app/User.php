@@ -198,9 +198,9 @@ public function is_wanting($monoId) {
     }
 
    
-     public function posts()
+     public function postings()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Posting::class);
     }
 
 

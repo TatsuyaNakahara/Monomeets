@@ -94,7 +94,7 @@ class UsersController extends Controller
     public function overview($id)
     {
         $user = User::find($id);
-        $monos = $user->monos()->orderBy('created_at', 'desc')->paginate(10);
+        $monos = \App\Mono::orderBy('created_at', 'desc')->paginate(10);
 
         $data = [
             'user' => $user,
@@ -111,11 +111,11 @@ class UsersController extends Controller
     public function chat($id)
     {
         $user = User::find($id);
-        /* $monos = $user->monos()->orderBy('created_at', 'desc')->paginate(10); */
+        $postings = $user->postings()->orderBy('created_at', 'desc')->paginate(10);
 
         $data = [
             'user' => $user,
-        /*    'monos' => $monos,    */
+            'postings' => $postings,
         ];
 
         $data += $this->counts($user);

@@ -45,7 +45,7 @@
     
     <br>
    
-    <!-- リクエスト用フォーム　いろいろ作る　-->
+    
            
     @if (Auth::user()->is_wanting($user->id))
         {!! Form::open(['route' => ['mono.unwant', $mono->id], 'method' => 'delete']) !!}

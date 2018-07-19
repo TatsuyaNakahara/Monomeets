@@ -60,6 +60,8 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
-
-
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('users', 'UsersController', ['only' => ['index', 'chat']]);
+    Route::resource('postings', 'PostingsController', ['only' => ['store', 'destroy']]);
+});
 
