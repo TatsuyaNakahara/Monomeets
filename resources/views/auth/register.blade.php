@@ -27,7 +27,7 @@
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
                 <div class='button'>
-                {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('Sign up', ['class' => 'btn btn-default btn-block']) !!}
             {!! Form::close() !!}
                 </div>
         </div>

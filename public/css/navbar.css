@@ -1,0 +1,11 @@
+.container{
+    font-family: 'arial unicode ms';
+}
+
+.navbar{
+    background-color: hsl(70, 11%, 23%) !important;
+}
+
+.navbar .navbar-header a{
+    color: hsl(0, 0%, 79%) !important;
+}

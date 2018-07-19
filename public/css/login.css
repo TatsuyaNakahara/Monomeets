@@ -5,7 +5,11 @@ body {
 
 #login{
     position: absolute;
-    
+    font-family: 'century';
+}
+
+.text-center{
+    margin-right: 35px;
 }
 
 p {

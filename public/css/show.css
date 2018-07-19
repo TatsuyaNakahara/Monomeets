@@ -8,11 +8,11 @@
 }
 
 .nav-tabs li{
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .row{
-    font-family: 'arial unicode ms';
+    font-family: 'Covered By Your Grace', cursive;
     border-top: 100px;
 }
 
@@ -35,15 +35,24 @@ body {
 }
 
 ul button{
-    margin-left: 320px;
-    display: inline-block;
-    height: 50px;
-    font-size: 20px;
-    line-height: 46px;
-    text-decoration: none;
-    border-radius:30px; 
-    
+   display: inline-block;
+  padding: .2em 2.5em;
+  border: 2px solid #333;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+  color: #333;
+  font-family: 'Covered By Your Grace', cursive;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 305px;
+  margin-top: 20px;
 }
+
+
+ul button:hover {
+  background-color: #c66;
+}
+
 
 .follow{
     width: 180px;
