@@ -110,12 +110,14 @@ class UsersController extends Controller
     
     public function chat($id)
     {
-        $user = User::find($id);
-        $postings = $user->postings()->orderBy('created_at', 'desc')->paginate(10);
-
+        $user = \Auth::user();
+        $mono = Mono::find($id);
+       // $postings = $user->postings()->orderBy('created_at', 'desc')->paginate(10);
+        $postings = \App\Posting::where('mono_id', $id)->paginate(10);
         $data = [
             'user' => $user,
             'postings' => $postings,
+            'mono_id' => $id
         ];
 
         $data += $this->counts($user);

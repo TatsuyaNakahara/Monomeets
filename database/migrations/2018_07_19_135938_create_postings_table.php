@@ -16,13 +16,13 @@ class CreatePostingsTable extends Migration
         Schema::create('postings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
-            $table->integer('post_id')->unsigned()->index();
+            $table->integer('mono_id')->unsigned()->index();
             $table->string('saying');
             $table->timestamps();
 
             // Foreign key constraint
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('post_id')->references('id')->on('users');
+            $table->foreign('mono_id')->references('id')->on('monos');
         });
 
     }

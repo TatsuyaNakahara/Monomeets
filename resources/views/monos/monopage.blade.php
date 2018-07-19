@@ -58,11 +58,13 @@
     @endif
 　　</div>
 
-        </div class="chat">
+       </div class="chat">
         
         {!! link_to_route('users.chat', 'Chat', ['id' => $user->id]) !!}
         </div>
  
+   
+   
    
             
             
