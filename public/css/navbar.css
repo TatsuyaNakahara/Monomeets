@@ -1,5 +1,9 @@
+.navbar-brand {
+    font-family: 'Covered By Your Grace', cursive;
+}
+
 .container{
-    font-family: 'arial unicode ms';
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .navbar{

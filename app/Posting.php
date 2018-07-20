@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posting extends Model
 {
-    protected $fillable = ['saying', 'user_id','mono_id'];
+    protected $fillable = ['saying', 'chatmonotitle', 'user_id','mono_id'];
 
     public function user()
     {

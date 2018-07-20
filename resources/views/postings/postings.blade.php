@@ -8,6 +8,7 @@
                 {!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $posting->created_at }}</span>
             </div>
             <div>
+                <p>[ {!! nl2br(e($posting->chatmonotitle)) !!} ]</p>
                 <p>{!! nl2br(e($posting->saying)) !!}</p>
             </div>
             <div>

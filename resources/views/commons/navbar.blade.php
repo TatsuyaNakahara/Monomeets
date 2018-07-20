@@ -33,3 +33,6 @@
         </div>
     </nav>
 </header>
+
+
+<link href="{{ asset('css/navbar.css') }}" media="all" rel="stylesheet" type="text/css" />

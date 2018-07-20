@@ -62,7 +62,7 @@
 
        </div class="chat">
         
-        {!! link_to_route('users.chat', '持ち主にコンタクトをとる', ['id' => $user->id]) !!}
+        {!! link_to_route('users.chat', '持ち主にコンタクトをとる', ['id' => $mono->id]) !!}
         
         </div>
  

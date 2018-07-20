@@ -32,10 +32,13 @@ class PostingsController extends Controller
     {
         $this->validate($request, [
             'saying' => 'required|max:191',
+            'chatmonotitle' => 'required|max:191',
         ]);
-
+        //var_dump($request->mono_id);
+        //return;
         $request->user()->postings()->create([
             'saying' => $request->saying,
+            'chatmonotitle' => $request->chatmonotitle,
             'mono_id' => $request->mono_id,
         ]);
 

@@ -11,8 +11,8 @@
            
                   {!! Form::open(['route' => 'postings.store']) !!}
                       <div class="form-group">
-                          {!! Form::label('title', '欲しいモノのお名前:') !!}
-                          {!! Form::textarea('title', old('title'), ['class' => 'form-control', 'rows' => '2']) !!}
+                          {!! Form::label('chatmonotitle', '欲しいモノのお名前:') !!}
+                          {!! Form::textarea('chatmonotitle', old('chatmonotitle'), ['class' => 'form-control', 'rows' => '2']) !!}
                           
                           <input type="hidden" name="mono_id" value="{{$mono_id}}"/>
                           {!! Form::label('title', 'お問い合わせ内容:') !!}
