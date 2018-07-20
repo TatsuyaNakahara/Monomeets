@@ -56,7 +56,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('wanters', 'UsersController@wanters')->name('users.wanters');
     });
 
-    Route::resource('monos', 'MonosController', ['only' => ['store', 'destroy']]);
+    Route::resource('monos', 'MonosController', ['only' => ['store', 'destroy', 'edit', 'update']]);
     
 });
 

@@ -80,6 +80,46 @@ class MonosController extends Controller
     }
     
     
+    public function edit($id)
+    {
+        
+        
+        $mono = \App\Mono::find($id);
+
+        return view('monos.edit', [
+            'mono' => $mono,
+        ]);
+    }
+        
+        
+        
+      //  $mono = \App\Mono::find($id);
+
+    //    if (\Auth::id() === $mono->user_id) {
+      //      $mono->edit();
+    //    }
+
+      //  return redirect()->back();
+    
+    
+    
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required|max:191',   
+            'content' => 'required|max:191',
+        ]);
+        
+        $mono = \App\Mono::find($id);
+        $mono->content = $request->content;
+        $mono->save();
+
+        return redirect('/');
+    }
+    
+    
+    
+    
     public function destroy($id)
     {
         $mono = \App\Mono::find($id);

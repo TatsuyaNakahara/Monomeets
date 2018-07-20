@@ -28,6 +28,8 @@
         <div class="content-box">
              <h3><?php echo("$mono->content");
              ?></h3>
+             
+             
         
         
        
@@ -61,6 +63,7 @@
        </div class="chat">
         
         {!! link_to_route('users.chat', '持ち主にコンタクトをとる', ['id' => $user->id]) !!}
+        
         </div>
  
    

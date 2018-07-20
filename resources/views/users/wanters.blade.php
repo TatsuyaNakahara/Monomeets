@@ -38,7 +38,7 @@
             
             
             @if(count($monos) > 0)
-                @include('monos.monos', ['monos' => $monos])
+                @include('monos.monos', ['monos' => $monos, 'wanter_ids_from_mono_id' => $wanter_ids_from_mono_id])
             @endif
         </div>
     </div>

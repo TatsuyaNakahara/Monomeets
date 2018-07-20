@@ -11,9 +11,12 @@
         <div class="title-box">
               {!! link_to_route('monos.monopage', $mono->title, ['id' => $mono->id]) !!}
         </div>
-            
-           
-       
+        
+        
+        @foreach($wanter_ids_from_mono_id[$mono->id]??array() as $u) Requested by
+       {{ App\User::find($u)->name }} 
+       @endforeach
+        
         
         <div class="panel-footer">
            　　　 @include ('mono_favorite.favorite_button', ['monos' => $monos])
@@ -24,6 +27,14 @@
                 {!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $mono->created_at }}</span>
             </div>
             
+            <div class="edit">
+                
+                {!! link_to_route('monos.edit', 'edit', ['id' => $mono->id]) !!}
+                
+                
+                
+            </div>
+            
             <div class="delete">
                  
                     @if (Auth::id() == $mono->user_id)
@@ -32,6 +43,8 @@
                     {!! Form::close() !!}
                 @endif
             </div>
+            
+            
         </div>
     </li>
 @endforeach

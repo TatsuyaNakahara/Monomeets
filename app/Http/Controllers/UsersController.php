@@ -265,6 +265,7 @@ class UsersController extends Controller
         $data = [
             'user' => $user,
             'monos' => $wanters,
+            'wanter_ids_from_mono_id' => $wanter_ids_from_mono_id
         ];
         
         $data += $this->counts($user);
