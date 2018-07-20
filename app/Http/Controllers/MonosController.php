@@ -61,7 +61,7 @@ class MonosController extends Controller
            ]);
            
            
-        Cloudder::upload($request->file('file'), null, ['folder' => "/public/storage/images"]);
+        Cloudder::upload($request->file('file'), null, ['folder' => "app/pictures"]);
         $url = Cloudder::getResult()['url'];
         
         $filename = $request->file('file')->store('public/images');
@@ -71,7 +71,7 @@ class MonosController extends Controller
         $request->user()->monos()->create([
             'title' => $request->title,
             'content' => $request->content,
-            'group_picture' => basename($filename),
+            'group_picture' => $url,
         ]);
 
         return redirect()->back();

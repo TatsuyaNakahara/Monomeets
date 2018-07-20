@@ -9,7 +9,7 @@
     <div class="card">
         
         <div class="image-box">
-          <img class="media-object img-rounded img-responsive" src="{{ asset('storage/images/' . $mono->group_picture) }}" alt="写真を挿入">
+          <img class="media-object img-rounded img-responsive" src="$mono->group_picture" alt="写真を挿入">
         </div>
         
         <div class="title-box">
