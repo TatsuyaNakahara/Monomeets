@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 
+use JD\Cloudder\Facades\Cloudder;
+
 class MonosController extends Controller
 {
     /**
@@ -58,7 +60,12 @@ class MonosController extends Controller
             'content' => 'required|max:191',
            ]);
            
+           
+        Cloudder::upload($request->file('file'), null, ['folder' => "app/pictures"]);
+        $url = Cloudder::getResult()['url'];
         $filename = $request->file('file')->store('public/images');
+        
+        
 
         $request->user()->monos()->create([
             'title' => $request->title,

@@ -30,12 +30,13 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users', 'UsersController', ['only' => ['index', 'show' , 'overview']]);
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show' , 'overview', 'checkmyitems']]);
     Route::group(['prefix' => 'users/{id}'], function () {
         
         Route::get('overview', 'UsersController@overview')->name('users.timeline');
         Route::get('seedetails', 'UsersController@seedetails')->name('monos.monopage');
         Route::get('chat', 'UsersController@chat')->name('users.chat');
+        Route::get('checkmyitems', 'UsersController@checkmyitems')->name('users.myitems');
         
         
         

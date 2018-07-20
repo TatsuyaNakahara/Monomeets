@@ -26,24 +26,30 @@
                 <li role="presentation" class="{{ Request::is('users/*/favoritings') ? 'active' : '' }}"><a href="{{ route('users.favoritings', ['id' => $user->id]) }}">Favoritings <span class="badge">{{ $count_favoritings }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('users/*/wantings') ? 'active' : '' }}"><a href="{{ route('users.wantings', ['id' => $user->id]) }}">Wants <span class="badge">{{ $count_wantings }}</span></a></li>
 　              <li role="presentation" class="{{ Request::is('users/*/wanters') ? 'active' : '' }}"><a href="{{ route('users.wanters', ['id' => $user->id]) }}">Requested<span class="badge">{{ $count_wanters }}</span></a></li>
+                
                 <button type="button" name="timeline" value="1">
-                     <a href="{{ route('users.timeline', ['id' => $user->id]) }}">TimeLine <span class="badge">{{ $count_monos }}</span></a></li>               
+                     <a href="{{ route('users.myitems', ['id' => $user->id]) }}"> {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span></a></li>               
+                </button>
+                
+                
+                <button type="button" name="timeline" value="1">
+                     <a href="{{ route('users.timeline', ['id' => $user->id]) }}">TimeLine</a></li>               
                 </button>
             </ul>
             @if (Auth::id() == $user->id)
                   {!! Form::model($monos, ['route' => 'monos.store','method' => 'post', 'files' => true, 'enctype'=>'multipart/form-data']) !!}
                       <div class="form-group">
-                          {!! Form::label('title', 'タイトル:') !!}
+                          {!! Form::label('title', 'モノのお名前:') !!}
                           {!! Form::textarea('title', old('title'), ['class' => 'form-control', 'rows' => '2']) !!}
                          
                           
-                          {!! Form::label('content', 'メッセージ:') !!}
+                          {!! Form::label('content', 'このモノとの思い出・特徴:') !!}
                           {!! Form::textarea('content', old('content'), ['class' => 'form-control', 'rows' => '2']) !!}
                           
                           
                           
                           <div class="form-group">
-                          {!! Form::label('file', '画像アップロード:', ['class' => 'control-label']) !!}
+                          {!! Form::label('file', 'モノの画像:', ['class' => 'control-label']) !!}
                           {!! Form::file('file') !!}
                           </div>
                           {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}

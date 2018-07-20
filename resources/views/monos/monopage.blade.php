@@ -53,14 +53,14 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['mono.want', $mono->id]]) !!}
-            {!! Form::submit('めっちゃ欲しい💦', ['class' => "btn btn-primary btn-block"]) !!}
+            {!! Form::submit('めっちゃほしい...', ['class' => "btn btn-primary btn-block"]) !!}
         {!! Form::close() !!}
     @endif
 　　</div>
 
        </div class="chat">
         
-        {!! link_to_route('users.chat', 'Chat', ['id' => $user->id]) !!}
+        {!! link_to_route('users.chat', '持ち主にコンタクトをとる', ['id' => $user->id]) !!}
         </div>
  
    

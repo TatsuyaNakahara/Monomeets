@@ -125,6 +125,26 @@ class UsersController extends Controller
         return view('users.chat', $data);
     }
     
+    
+    
+    
+    public function checkmyitems($id)
+    {
+        $user = User::find($id);
+        $monos = $user->monos()->orderBy('created_at', 'desc')->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'monos' => $monos,
+        ];
+
+        $data += $this->counts($user);
+
+        return view('users.myitems', $data);
+    }
+    
+    
+    
 
     public function seedetails($id)
     {
@@ -141,6 +161,11 @@ class UsersController extends Controller
 
         return view('monos.monopage', $data);
     }
+    
+    
+    
+    
+    
     
     
     
