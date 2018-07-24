@@ -5,6 +5,6 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['user.favorite', $mono->id]]) !!}
-            {!! Form::submit('Favorite', ['class' => "btn btn-primary btn-xs"]) !!}
+            {!! Form::submit('Favorite', ['class' => "btn btn-warning btn-xs"]) !!}
         {!! Form::close() !!}
     @endif

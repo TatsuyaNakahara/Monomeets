@@ -28,6 +28,7 @@
         <div class="content-box">
              <h3><?php echo("$mono->content");
              ?></h3>
+        </div>
              
              
         
@@ -41,7 +42,7 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['user.favorite', $mono->id]]) !!}
-            {!! Form::submit('Favorite', ['class' => "btn btn-primary btn-block"]) !!}
+            {!! Form::submit('Favorite', ['class' => "btn btn-warning btn-block"]) !!}
         {!! Form::close() !!}
     @endif
     
@@ -55,16 +56,27 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['mono.want', $mono->id]]) !!}
-            {!! Form::submit('めっちゃほしい...', ['class' => "btn btn-primary btn-block"]) !!}
+            {!! Form::submit('めっちゃほしい...', ['class' => "btn btn-warning btn-block"]) !!}
         {!! Form::close() !!}
     @endif
 　　</div>
+　　
 
-       </div class="chat">
+       <div class="chat">
         
-        {!! link_to_route('users.chat', '持ち主にコンタクトをとる', ['id' => $mono->id]) !!}
+        {!! link_to_route('users.chat', 'コンタクトをとる！', ['id' => $mono->id]) !!}
         
         </div>
+        
+        <div class="delete">
+                 
+                    @if (Auth::id() == $mono->user_id)
+                    {!! Form::open(['route' => ['monos.destroy', $mono->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-block']) !!}
+                    {!! Form::close() !!}
+                @endif
+            </div>
+        
  
    
    

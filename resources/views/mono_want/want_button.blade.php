@@ -4,6 +4,6 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['mono.want', $mono->id]]) !!}
-            {!! Form::submit('めちゃほしい...', ['class' => "btn btn-primary btn-xs"]) !!}
+            {!! Form::submit('めちゃほしい...', ['class' => "btn btn-warning btn-xs"]) !!}
         {!! Form::close() !!}
     @endif

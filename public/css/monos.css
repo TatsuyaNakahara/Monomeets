@@ -24,13 +24,13 @@ body {
   border-radius:5px 5px 0 0;
   background-color:#f8f8f8;
   margin-bottom:-6px;
-  height:120px;
+  height:180px;
   background:url("https://placehold.jp/250x120.png") center center /cover no-repeat;
 }
 
 .image-box img{
-    height: 120px;
-    width: 250px;
+    height: 180px;
+    width: 300px;
 }
 
 .title-box{
@@ -40,7 +40,10 @@ body {
   padding:20px 10px 10px;
 }
 
-.delete{
+
+
+.chat{
     float: right;
     margin-right: 10px;
 }
+

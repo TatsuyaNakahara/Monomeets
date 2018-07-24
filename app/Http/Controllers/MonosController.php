@@ -86,9 +86,14 @@ class MonosController extends Controller
         
         $mono = \App\Mono::find($id);
 
+       if (\Auth::id() === $mono->user_id) {
         return view('monos.edit', [
             'mono' => $mono,
         ]);
+       }
+       else{
+           return redirect()->back();
+       }
     }
         
         

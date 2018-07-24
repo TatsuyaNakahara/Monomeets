@@ -17,7 +17,7 @@
                           <input type="hidden" name="mono_id" value="{{$mono_id}}"/>
                           {!! Form::label('title', 'お問い合わせ内容:') !!}
                           {!! Form::textarea('saying', old('saying'), ['class' => 'form-control', 'rows' => '2']) !!}
-                          {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
+                          {!! Form::submit('Post', ['class' => 'btn btn-success btn-block']) !!}
                       </div>
                   {!! Form::close() !!}
            
