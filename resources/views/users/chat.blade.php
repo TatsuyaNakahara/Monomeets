@@ -15,7 +15,7 @@
                           {!! Form::textarea('chatmonotitle', old('chatmonotitle'), ['class' => 'form-control', 'rows' => '2']) !!}
                           
                           <input type="hidden" name="mono_id" value="{{$mono_id}}"/>
-                          {!! Form::label('title', 'お問い合わせ内容（返信の際は宛先を忘れずに！）:') !!}
+                          {!! Form::label('title', 'お問い合わせ内容（返信の際は宛先を忘れずに！ 例：＞〇〇〇〇さん）:') !!}
                           {!! Form::textarea('saying', old('saying'), ['class' => 'form-control', 'rows' => '2']) !!}
                           {!! Form::submit('Post', ['class' => 'btn btn-success btn-block']) !!}
                       </div>
