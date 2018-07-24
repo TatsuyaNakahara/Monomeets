@@ -71,9 +71,9 @@
         <br>
         
         
-        <button type="button" name="timeline" value="1">
+        <div class="ribbon">
                      {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span>         
-                </button>
+        </div>
         
         @include('monos.monos', ['monos' => $monos])
         

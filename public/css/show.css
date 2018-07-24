@@ -57,3 +57,17 @@ ul button:hover {
 .follow{
     width: 180px;
 }
+
+.ribbon {
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+    height: 50px;/*リボンの高さ*/
+    line-height: 50px;/*リボンの高さ*/
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;/*横の大きさ*/
+    font-size: 15px;/*文字の大きさ*/
+    background: #f57a78;/*塗りつぶし色*/
+    color: #FFF;/*文字色*/
+}
