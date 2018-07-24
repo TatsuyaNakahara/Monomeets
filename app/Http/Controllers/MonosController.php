@@ -112,6 +112,7 @@ class MonosController extends Controller
         
         $mono = \App\Mono::find($id);
         $mono->content = $request->content;
+        $mono->title = $request->title;
         $mono->save();
 
         return redirect('/');

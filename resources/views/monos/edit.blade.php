@@ -17,7 +17,11 @@
         {!! Form::label('content', 'このモノとの思い出・特徴:') !!}
         {!! Form::text('content') !!}
 
-        {!! Form::submit('更新') !!}
+         @if (Auth::id() == $mono->user_id)
+                    {!! Form::open(['route' => ['monos.update', $mono->id], 'method' => 'update']) !!}
+                        {!! Form::submit('Update', ['class' => 'btn btn-danger btn-xs']) !!}
+                    {!! Form::close() !!}
+    @endif
 
     {!! Form::close() !!}
     
