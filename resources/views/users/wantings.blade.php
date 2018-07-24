@@ -9,6 +9,7 @@
                 </div>
                 <div class="panel-body">
                     <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->meetsid, 500) }}" alt="">
+                   @include('user_follow.follow_button', ['user' => $user])
                 </div>
             </div>
             @include('user_follow.follow_button', ['user' => $user])
@@ -29,7 +30,7 @@
             
             <button type="button" name="timeline" value="1">
                   <a href="{{ route('users.timeline', ['id' => $user->id]) }}">TimeLine</a></li>
-                  @include('user_follow.follow_button', ['user' => $user])
+                  
             </button>
             </ul>
             @if(count($monos) > 0)
