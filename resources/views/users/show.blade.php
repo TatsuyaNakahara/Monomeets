@@ -27,10 +27,10 @@
                 <li role="presentation" class="{{ Request::is('users/*/wantings') ? 'active' : '' }}"><a href="{{ route('users.wantings', ['id' => $user->id]) }}">Wants <span class="badge">{{ $count_wantings }}</span></a></li>
 　              <li role="presentation" class="{{ Request::is('users/*/wanters') ? 'active' : '' }}"><a href="{{ route('users.wanters', ['id' => $user->id]) }}">Requested<span class="badge">{{ $count_wanters }}</span></a></li>
                 
-                <button type="button" name="timeline" value="1">
+         <!--       <button type="button" name="timeline" value="1">
                      <a href="{{ route('users.myitems', ['id' => $user->id]) }}"> {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span></a></li>               
                 </button>
-                
+                -->
                 
                 <button type="button" name="timeline" value="1">
                      <a href="{{ route('users.timeline', ['id' => $user->id]) }}">TimeLine</a></li>               
@@ -67,6 +67,15 @@
         </div>
         
         
+        <br>
+        <br>
+        
+        
+        <button type="button" name="timeline" value="1">
+                     {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span>         
+                </button>
+        
+        @include('monos.monos', ['monos' => $monos])
         
         
         

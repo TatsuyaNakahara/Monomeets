@@ -74,7 +74,8 @@ class MonosController extends Controller
             'group_picture' => $url,
         ]);
 
-        return redirect()->back();
+           return redirect()->back();
+
         
         
     }
