@@ -130,6 +130,12 @@ class MonosController extends Controller
 
         return redirect()->back();
     }
+    
+    
+    public function toppage()
+   {
+       return view('monos.toppage');
+   }
 
 
 }

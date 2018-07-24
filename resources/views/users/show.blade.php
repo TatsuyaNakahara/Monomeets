@@ -52,7 +52,7 @@
                           {!! Form::label('file', 'モノの画像:', ['class' => 'control-label']) !!}
                           {!! Form::file('file') !!}
                           </div>
-                          {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
+                          {!! Form::submit('Post', ['class' => 'btn btn-warning btn-lg active']) !!}
                       </div>
                   {!! Form::close() !!}
             @endif

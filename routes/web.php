@@ -56,11 +56,11 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('wanters', 'UsersController@wanters')->name('users.wanters');
     });
 
-    Route::resource('monos', 'MonosController', ['only' => ['store', 'destroy', 'edit', 'update']]);
+    Route::resource('monos', 'MonosController', ['only' => ['store', 'destroy', 'edit', 'update', 'toppage']]);
     
 });
 
-
+Route::get('toppage', 'MonosController@toppage')->name('monos.toppage');
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', 'UsersController', ['only' => ['index', 'chat']]);
     Route::resource('postings', 'PostingsController', ['only' => ['index', 'store', 'destroy']]);
