@@ -22,9 +22,9 @@
 <div class="monomeets">
     <h1>Monomeets</h1>
 </div>
-        <div class="highlights">
-        　　<h3>～モノのセカンドキャリアを考えよう～</h3>
-　　　　　　Monomeetsは使わないけれど捨てられないものを交換しあうサービスです。<br><br>
+    <div class="highlights">
+            <h3>～モノのセカンドキャリアを考えよう～</h3>
+　Monomeetsは使わないけれど捨てられないものを交換しあうサービスです。<br><br>
         　　<h2>How to use Monomeets?</h2><br>
         　　大切なモノを大切な人に使ってもらおう！<br>
     　　　　月額50円で登録したら使い放題！<br>
