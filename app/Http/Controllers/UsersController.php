@@ -67,7 +67,7 @@ class UsersController extends Controller
       public function show($id)
     {
         $user = User::find($id);
-        $monos = $user->monos()->orderBy('created_at', 'desc')->paginate(10);
+        $monos = $user->monos()->orderBy('created_at', 'desc')->paginate(12);
 
         $data = [
             'user' => $user,
@@ -94,7 +94,7 @@ class UsersController extends Controller
     public function overview($id)
     {
         $user = User::find($id);
-        $monos = \App\Mono::orderBy('created_at', 'desc')->paginate(10);
+        $monos = \App\Mono::orderBy('created_at', 'desc')->paginate(12);
 
         $data = [
             'user' => $user,
