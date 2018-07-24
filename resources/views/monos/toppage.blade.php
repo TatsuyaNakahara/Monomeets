@@ -37,7 +37,24 @@
     　　　　リクエストされたら、リクエストをしてくれたユーザーのページで自分の商品と交換したいモノを選んでみよう！<br>
     　      <h3 class="ribbon1">Step4</h3><br>
       　　　　掲示板で交渉が成立したら交換場所を決めて物の再就職を見届けよう<br><br><br>
+      　　　　
+      　　　　
         </div>
+            <div>
+                今すぐ始める
+            </div>
+            
+            <div>
+                ↓　　　↓　　　↓　　　↓　　　↓
+            </div><br>
+        
+            <div class="button">
+                {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-md btn-default' ]) !!}
+            </div>
+            
+            <br><br>
+        </div>
+        
     
  @endsection         
 <link href="{{ asset('css/toppage.css') }}" media="all" rel="stylesheet" type="text/css" />
