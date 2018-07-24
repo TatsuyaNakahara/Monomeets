@@ -9,7 +9,6 @@
                 </div>
                 <div class="panel-body">
                     <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->meetsid, 500) }}" alt="">
-                   @include('user_follow.follow_button', ['user' => $user])
                 </div>
             </div>
             @include('user_follow.follow_button', ['user' => $user])

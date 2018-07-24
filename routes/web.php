@@ -30,7 +30,7 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users', 'UsersController', ['only' => ['index', 'show' , 'overview', 'checkmyitems']]);
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show' , 'overview', 'checkmyitems', 'seedetails']]);
     Route::group(['prefix' => 'users/{id}'], function () {
         
         Route::get('overview', 'UsersController@overview')->name('users.timeline');

@@ -39,6 +39,15 @@
                 
             </div>
             
+            <div class="delete">
+                 
+                @if (Auth::id() == $mono->user_id)
+                    {!! Form::open(['route' => ['monos.destroy', $mono->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                    {!! Form::close() !!}
+                @endif
+            </div>
+            
             
             
             

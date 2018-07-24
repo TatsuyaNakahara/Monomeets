@@ -155,6 +155,7 @@ class UsersController extends Controller
         $data = [
             'user' => $user,
             'monos' => $monos,
+        
         ];
 //var_dump($user);
        $data += $this->counts($user);
