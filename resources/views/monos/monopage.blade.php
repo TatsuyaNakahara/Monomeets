@@ -38,11 +38,11 @@
        <div class="show-class">        
              @if (Auth::user()->is_favoriting($mono->id))
         {!! Form::open(['route' => ['user.unfavorite', $mono->id], 'method' => 'delete']) !!}
-            {!! Form::submit('Unfavorite', ['class' => "btn btn-danger btn-block"]) !!}
+            {!! Form::submit('Unkeep', ['class' => "btn btn-danger btn-block"]) !!}
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['user.favorite', $mono->id]]) !!}
-            {!! Form::submit('Favorite', ['class' => "btn btn-warning btn-block"]) !!}
+            {!! Form::submit('Keep', ['class' => "btn btn-warning btn-block"]) !!}
         {!! Form::close() !!}
     @endif
     
@@ -52,11 +52,11 @@
            
     @if (Auth::user()->is_wanting($user->id))
         {!! Form::open(['route' => ['mono.unwant', $mono->id], 'method' => 'delete']) !!}
-            {!! Form::submit('やっぱいらん♪', ['class' => "btn btn-danger btn-block"]) !!}
+            {!! Form::submit('Unwant', ['class' => "btn btn-danger btn-block"]) !!}
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['mono.want', $mono->id]]) !!}
-            {!! Form::submit('めっちゃほしい...', ['class' => "btn btn-warning btn-block"]) !!}
+            {!! Form::submit('Want', ['class' => "btn btn-warning btn-block"]) !!}
         {!! Form::close() !!}
     @endif
 　　</div>

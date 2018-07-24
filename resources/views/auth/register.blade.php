@@ -17,7 +17,7 @@
                     {!! Form::label('name', 'Name') !!}
                     {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                 
-                    {!! Form::label('meetsid', 'Meetsid') !!}
+                    {!! Form::label('meetsid', 'Meets-Id') !!}
                     {!! Form::text('meetsid', old('meetsid'), ['class' => 'form-control']) !!}
                
                     {!! Form::label('password', 'Password') !!}
