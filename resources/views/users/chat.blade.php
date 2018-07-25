@@ -31,3 +31,5 @@
         </div>
     </div>
 @endsection
+
+<link href="{{ asset('css/chat.css') }}" media="all" rel="stylesheet" type="text/css" />

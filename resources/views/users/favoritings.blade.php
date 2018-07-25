@@ -3,6 +3,7 @@
 @section('content')
     <div class="row">
         <aside class="col-xs-4">
+            <div id="wrapper">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">{{ $user->name }}</h3>
@@ -10,6 +11,7 @@
                 <div class="panel-body">
                     <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->meetsid, 500) }}" alt="">
                 </div>
+            </div>
             </div>
             @include('user_follow.follow_button', ['user' => $user])
         </aside>
@@ -31,9 +33,10 @@
                   
             </button>
             </ul>
-            @if(count($monos) > 0)
+                @if(count($monos) > 0)
                 @include('monos.monos', ['monos' => $monos])
             @endif
+            
         </div>
     </div>
 @endsection

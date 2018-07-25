@@ -1,7 +1,118 @@
+@media screen and (max-width: 767px){
+    
+#wrapper{
+    width: 50vw;
+}
+
+.panel{
+    
+    text-align: center;
+    margin-left: -250%;
+}
+
+.form-group{
+   margin-left: -80%;
+   width: 120%;
+}
+
+.nav{
+    margin-top: -80%;
+}
+
+.col-xs-4{
+    margin-left: 490px;
+}
+
+.nav-tabs li{
+    margin-left: 25px;
+}
+
+.nav .but{
+    margin-left: -170%;
+}
+
+.row{
+    font-family: 'Covered By Your Grace', cursive;
+    border-top: 100px;
+}
+
+.col-xs-8{
+    margin-left: 200px;
+}
+
+body {
+    background-image: url("3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    margin: 80px 0 0 0;
+    z-index: -1;
+    
+}
+
+
+.mono{
+    margin-top: 30px;
+    margin-left: 120px;
+    
+}
+
+ul button{
+   display: inline-block;
+  padding: .2em 2.5em;
+  border: 2px solid #333;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+  color: #333;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: large;
+  font-weight: 1000;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 20px;
+  width: 50%;
+  height: 10%;
+}
+
+
+ul button:hover {
+  background-color: #c66;
+}
+
+
+.follow{
+    width: 180px;
+}
+
+.ribbon {
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+    height: 50px;/*リボンの高さ*/
+    line-height: 50px;/*リボンの高さ*/
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;/*横の大きさ*/
+    font-size: 15px;/*文字の大きさ*/
+    background: #f57a78;/*塗りつぶし色*/
+    color: #FFF;/*文字色*/
+    margin-top:500px;
+}
+}
+
+
+
 .panel{
     width: 50%;
     text-align: center;
 }
+
+
 
 .col-xs-4{
     margin-left: 490px;
@@ -73,4 +184,9 @@ ul button:hover {
     font-size: 15px;/*文字の大きさ*/
     background: #f57a78;/*塗りつぶし色*/
     color: #FFF;/*文字色*/
+    margin-left: 10%;
+}
+
+.ribbon2{
+    margin-left: 10%;
 }

@@ -3,6 +3,7 @@
 @section('content')
     <div class="row">
         <aside class="col-xs-4">
+            <div id="wrapper">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">{{ $user->name }}</h3>
@@ -10,6 +11,7 @@
                 <div class="panel-body">
                     <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->meetsid, 500) }}" alt="">
                 </div>
+            </div>
             </div>
             
             <div class="follow">
@@ -31,10 +33,11 @@
                      <a href="{{ route('users.myitems', ['id' => $user->id]) }}"> {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span></a></li>               
                 </button>
                 -->
-                
+                <div class="but">
                 <button type="button" name="timeline" value="1">
                      <a href="{{ route('users.timeline', ['id' => $user->id]) }}">Let's Meet with Monos!<br>（みんなのモノ一覧）</a></li>               
                 </button>
+                </div>
             </ul>
             @if (Auth::id() == $user->id)
                   {!! Form::model($monos, ['route' => 'monos.store','method' => 'post', 'files' => true, 'enctype'=>'multipart/form-data']) !!}
@@ -48,7 +51,7 @@
                           
                           
                           
-                          <div class="form-group">
+                          
                           {!! Form::label('file', 'モノの画像:', ['class' => 'control-label']) !!}
                           {!! Form::file('file') !!}
                           </div>
@@ -75,7 +78,9 @@
                      {{ $user->name }}'s Monos  <span class="badge">{{ $count_monos }}</span>         
         </div>
         
+        <div class="ribbon2">
         @include('monos.monos', ['monos' => $monos])
+        </div>
         
         
         
