@@ -29,7 +29,36 @@ footer{
     color: black;
 }
 
+.month{
+    margin-top: -2%;
+    margin-right: 4%;
+}
+
+.steps{
+    margin-left: 0%;
+}
+
+.content1{
+    margin-top: -2%;
+    margin-left: -4%;
+}
+
+.content2{
+    margin-top: -2%;
+    margin-left: -4%;
+}
+
+.content3{
+    margin-top: -2%;
+}
+
+.content4{
+    margin-top: -2%;
+    margin-left: -4%;
+}
+
 .ribbon1 {
+    margin-top: 0%;
     display: inline-block;
     border-radius: 30px;
     position: relative;
@@ -41,4 +70,22 @@ footer{
     font-size: 15px;/*文字の大きさ*/
     background: #f57a78;/*塗りつぶし色*/
     color: #FFF;/*文字色*/
+}
+
+.ribbon2 {
+    margin-top: -3%;
+    margin-right: -2%;
+    font-size: 25px;/*文字の大きさ*/
+    color: #FF0033;/*文字色*/
+}
+
+.attention{
+    margin-top: -2%;
+    margin-left: -2%;
+    color: black;
+}
+
+.start{
+    margin-top: -3%;
+    margin-left: 2%;
 }

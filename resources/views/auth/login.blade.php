@@ -11,7 +11,7 @@
 
             {!! Form::open(['route' => 'login.post']) !!}
                 <div class="form-group">
-                    {!! Form::label('meetsid', 'Meetsid') !!}
+                    {!! Form::label('meetsid', 'Meets-Id') !!}
                     {!! Form::text('meetsid', old('meetsid'), ['class' => 'form-control']) !!}
                 
                     {!! Form::label('password', 'Password') !!}

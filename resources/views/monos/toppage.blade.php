@@ -24,25 +24,37 @@
 </div>
     <div class="highlights">
             <h3>～モノのセカンドキャリアを考えよう～</h3>
-　Monomeetsは使わないけれど捨てられないものを交換しあうサービスです。<br><br>
+　          Monomeetsは使わないけれど捨てられないものを交換しあうサービスです。<br><br>
         　　<h2>How to use Monomeets?</h2><br>
         　　大切なモノを大切な人に使ってもらおう！<br>
+        　　<div class="month">
     　　　　月額50円で登録したら使い放題！<br>
+    　　　　</div>
+    　　　<div class="steps">
     　      <h3 class="ribbon1">Step1</h3><br>
-    　　　　自分が交換に出したいMonoを登録<br>
+    　       <div class="content1">
+    　　　　自分が交換に出したいモノを登録<br>
+    　　　　</div>
     　      <h3 class="ribbon1">Step2</h3><br>
+    　       <div class="content2">
     　　　　他のユーザーが登録している交換希望商品を検索<br>
+    　　　　</div>
     　      <h3 class="ribbon1">Step3</h3><br>
+    　       <div class="content3">
     　　　　自分が欲しいものがあれば、リクエストとして掲示板に書き込み<br>
     　　　　リクエストされたら、リクエストをしてくれたユーザーのページで自分の商品と交換したいモノを選んでみよう！<br>
+    　　　　</div>
     　      <h3 class="ribbon1">Step4</h3><br>
-      　　　　掲示板で交渉が成立したら交換場所を決めて物の再就職を見届けよう<br><br><br>
-      　　　　
-      　　　　
+    　       <div class="content4">
+      　　　　掲示板で交渉が成立したら交換場所を決めて交換！あなたのモノの再就職を見届けよう<br><br><br>
+      　　　   </div>
+      　　　 <h3 class="ribbon2">Attention!</h3>
+      　　　 <div class="attention">
+      　　　　交換が成立したらそのモノのページを削除して下さい。<br><br><br>
+      　　　 </div>
         </div>
-            <div>
+            <div class="start">
                 今すぐ始める
-            </div>
             
             <div>
                 ↓　　　↓　　　↓　　　↓　　　↓
@@ -50,6 +62,8 @@
         
             <div class="button">
                 {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-md btn-default' ]) !!}
+            </div>
+        </div>
             </div>
             
             <br><br>

@@ -5,11 +5,11 @@ body {
     background-image: url("6.jpg");
     background-image: url("7.jpg");
     */
-    background-size: 100%;
+    background-size: 100% 100%;
 
    background-image: url("1.jpg");
-  animation: bg-color 10s infinite;
-  -webkit-animation: bg-color 10s infinite;
+  animation: bg-color 20s infinite;
+  -webkit-animation: bg-color 20s infinite;
 }
 
 #toppage {
@@ -54,8 +54,8 @@ footer{
   20% { background-image: url("2.jpg") }
   40% { background-image: url("3.jpg") }
   60% { background-image: url("4.jpg") }
-  80% { background-image: url("5.jpg") }
-  100% { background-image: url("1.jpg") }
+  80% { background-image: url("6.jpg") }
+  100% { background-image: url("7.jpg") }
 }
 /*@keyframes bg-color {
   0% { background-image: url("1.jpg") }
