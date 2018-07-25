@@ -19,7 +19,7 @@
                 <li role="presentation" class="{{ Request::is('users/*/followings') ? 'active' : '' }}"><a href="{{ route('users.followings', ['id' => $user->id]) }}">Followings <span class="badge">{{ $count_followings }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('users/*/followers') ? 'active' : '' }}"><a href="{{ route('users.followers', ['id' => $user->id]) }}">Followers <span class="badge">{{ $count_followers }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('users/*/favoritings') ? 'active' : '' }}"><a href="{{ route('users.favoritings', ['id' => $user->id]) }}">Keepings <span class="badge">{{ $count_favoritings }}</span></a></li>
-                <li role="presentation" class="{{ Request::is('users/*/wantings') ? 'active' : '' }}"><a href="{{ route('users.wantings', ['id' => $user->id]) }}">Wants<span class="badge">{{ $count_wantings }}</span></a></li>
+                <li role="presentation" class="{{ Request::is('users/*/wantings') ? 'active' : '' }}"><a href="{{ route('users.wantings', ['id' => $user->id]) }}">Requests<span class="badge">{{ $count_wantings }}</span></a></li>
 　              <li role="presentation" class="{{ Request::is('users/*/wanters') ? 'active' : '' }}"><a href="{{ route('users.wanters', ['id' => $user->id]) }}">Requested<span class="badge">{{ $count_wanters }}</span></a></li>
             
             <button type="button" name="timeline" value="1">
@@ -28,7 +28,7 @@
             
             
             <button type="button" name="timeline" value="1">
-                  <a href="{{ route('users.timeline', ['id' => $user->id]) }}">TimeLine</a></li>
+                  <a href="{{ route('users.timeline', ['id' => $user->id]) }}">Let's Meet with Monos!<br>（みんなのモノ一覧）</a></li>
                   
             </button>
             </ul>

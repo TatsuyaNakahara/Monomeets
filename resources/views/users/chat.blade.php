@@ -8,6 +8,9 @@
         
         <div class="col-xs-8">
             
+            <div class="chat">
+                    <h3 class="chat-title">[{{ $mono->title }}]のチャットルーム</h3>
+                </div>
            
                   {!! Form::open(['route' => 'postings.store']) !!}
                       <div class="form-group">
